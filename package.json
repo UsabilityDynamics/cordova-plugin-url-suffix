@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-url-suffix",
+  "version": "1.0.0",
+  "description": "Add support for iOS URL Scheme Suffix",
+  "cordova": {
+    "id": "cordova-plugin-url-suffix",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UsabilityDynamics/cordova-plugin-url-suffix.git"
+  },
+  "keywords": [
+    "URL Scheme Suffix",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "UsabilityDynamics, Inc. <hello@usabilitydynamics.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UsabilityDynamics/cordova-plugin-url-suffix/issues"
+  },
+  "homepage": "https://github.com/UsabilityDynamics/cordova-plugin-url-suffix"
+}

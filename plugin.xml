@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-url-suffix"
+        version="1.0.0">
+
+  <name>URL Scheme Suffix</name>
+
+  <description>
+    Add support for iOS URL Scheme Suffix
+  </description>
+
+  <author>UsabilityDynamics, Inc.</author>
+
+  <license>MIT</license>
+
+  <keywords>URL Scheme Suffix, URL, Scheme, Suffix</keywords>
+
+  <repo>https://github.com/UsabilityDynamics/cordova-plugin-url-suffix.git</repo>
+
+  <issue>https://github.com/UsabilityDynamics/cordova-plugin-url-suffix/issues</issue>
+
+  <preference name="SUFFIX" />
+  <preference name="APP_ID" />
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+      <array>
+        <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>fb$APP_ID$URL_SCHEME</string>
+          </array>
+        </dict>
+      </array>
+    </config-file>
+  </platform>
+
+</plugin>
