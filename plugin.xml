@@ -34,7 +34,7 @@
         <dict>
           <key>CFBundleURLSchemes</key>
           <array>
-            <string>fb$APP_ID$URL_SCHEME</string>
+            <string>fb$APP_ID$SUFFIX</string>
           </array>
         </dict>
       </array>
