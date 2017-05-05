@@ -22,6 +22,7 @@
 
   <preference name="SUFFIX" />
   <preference name="APP_ID" />
+  <preference name="BUNDLE_ID" />
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -32,6 +33,8 @@
     <config-file target="*-Info.plist" parent="CFBundleURLTypes">
       <array>
         <dict>
+          <key>CFBundleURLName</key>
+          <string>$BUNDLE_ID</string>
           <key>CFBundleURLSchemes</key>
           <array>
             <string>fb$APP_ID$SUFFIX</string>
